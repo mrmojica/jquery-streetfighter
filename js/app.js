@@ -1,15 +1,16 @@
 $(document).ready(function(){
-	$('.ryu').mouseenter(function(){
+	$('.ryu, .ryu-hulk').mouseenter(function(){
 		$('.ryu-action').hide();
 		$('.ryu-ready').show();
 	});
-	$('.ryu').mouseleave(function(){
+	$('.ryu, .ryu-hulk').mouseleave(function(){
 		$('.ryu-action').hide();
 		$('.ryu-still').show();
 
 	});
-	$('.ryu').mousedown(function(){
-		console.log('mousedown');
+	
+	$('.ryu, .ryu-hulk').mousedown(function(){
+		//console.log('mousedown');
 		// play hadouken sound
 		playHadouken();
 		$('.ryu-action').hide();
@@ -25,8 +26,8 @@ $(document).ready(function(){
 				}
 			);
 	});
-	$('.ryu').mouseup(function(){
-		console.log('mouse up');
+	$('.ryu, .ryu-hulk').mouseup(function(){
+		//console.log('mouse up');
 		$('.ryu-action').hide();
 		$('.ryu-ready').show();
 
@@ -47,6 +48,8 @@ $(document).ready(function(){
 			$('.ryu-still').show();
 		};
 	});
+
+
 
 });
 

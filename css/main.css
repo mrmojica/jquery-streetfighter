@@ -15,6 +15,7 @@ body {
 	height: 500px;
 	position: relative;
 	z-index: 1;
+  width:100%;
 }
 
 .ryu {
@@ -22,6 +23,22 @@ body {
 	position: absolute;
 	width: 659px;
 	height: 494px;
+}
+
+
+.ryu-hulk {
+  position: absolute;
+  width: 659px;
+  height: 494px;
+  right: 0;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  -webkit-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg);
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
@@ -75,15 +92,14 @@ body {
 
 
 .instructions {
-  color: red;
-  font-size: 50px;
+  font-weight: bold;
   width: 600px;
 }
 
  p {
   width: 50%;
   color: black;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 45px;
 }
 
