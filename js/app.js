@@ -1,16 +1,15 @@
-$(document).ready(function(){
-	$('.ryu, .ryu-hulk').mouseenter(function(){
+$(document).ready(function() {
+	$('.ryu, .ryu-hulk').mouseenter(function() {
 		$('.ryu-action').hide();
 		$('.ryu-ready').show();
 	});
-	$('.ryu, .ryu-hulk').mouseleave(function(){
+	$('.ryu, .ryu-hulk').mouseleave(function() {
 		$('.ryu-action').hide();
 		$('.ryu-still').show();
 
 	});
 	
-	$('.ryu, .ryu-hulk').mousedown(function(){
-		//console.log('mousedown');
+	$('.ryu, .ryu-hulk').mousedown(function() {
 		// play hadouken sound
 		playHadouken();
 		$('.ryu-action').hide();
@@ -26,21 +25,20 @@ $(document).ready(function(){
 				}
 			);
 	});
-	$('.ryu, .ryu-hulk').mouseup(function(){
-		//console.log('mouse up');
+	$('.ryu, .ryu-hulk').mouseup(function() {
 		$('.ryu-action').hide();
 		$('.ryu-ready').show();
 
 	});
 
-	$(document).keydown(function(event){
+	$(document).keydown(function(event) {
 		if(event.which === 88){
 			playGroove();
 			$('.ryu-action').hide();
 			$('.ryu-cool').show();
 
 		};		
-	}).keyup(function(event){
+	}).keyup(function(event) {
 		if(event.which === 88){
 			$('#groove-sound')[0].pause();
 			$('#groove-sound')[0].load();
