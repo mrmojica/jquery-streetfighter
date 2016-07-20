@@ -67,7 +67,6 @@ $(document).ready(function() {
 
 	 });
 
-
 });
 
 function playHadouken () {
